@@ -1,15 +1,25 @@
-- name: Git Semantic Version
-  uses: PaulHatch/semantic-version@v5.0.3
-  with:
-    tag_prefix: "v"
-    major_pattern: "(MAJOR)"
-    major_regexp_flags: ""
-    minor_pattern: "(MINOR)"
-    minor_regexp_flags: ""
-    version_format: "${major}.${minor}.${patch}-prerelease${increment}"
-    change_path: "dist"
-    namespace: my-service
-    bump_each_commit: false
-    search_commit_body: false
-    user_format_type: "csv"
-    enable_prerelease_mode: false
+name: CI
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Semantic Versioning
+      uses: PaulHatch/semantic-version@v5.0.3
+      with:
+        tag_prefix: "v"
+        major_pattern: "(MAJOR)"
+        major_regexp_flags: ""
+        minor_pattern: "(MINOR)"
+        minor_regexp_flags: ""
+        version_format: "${major}.${minor}.${patch}-prerelease${increment}"
+        change_path: "dist"
+        namespace: my-service
+        bump_each_commit: false
+        search_commit_body: false
+        user_format_type: "csv"
+        enable_prerelease_mode: false
