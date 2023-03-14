@@ -6,6 +6,13 @@
 
 Easily integrate smart and functional AI widgets into your projects without writing a single line of code.
 
+# CDN
+
+| Url                                                                        | Description   |
+| -------------------------------------------------------------------------- | ------------- |
+| [/bundle.js](https://cdn.jsdelivr.net/gh/interaxai/cdn@latest/bundle.js)   | embed core    |
+| [/styles.css](https://cdn.jsdelivr.net/gh/interaxai/cdn@latest/styles.css) | embed styling |
+
 ## License
 
 Copyright InteraxAI 2023
