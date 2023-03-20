@@ -8,10 +8,10 @@ Easily integrate smart and functional AI widgets into your projects without writ
 
 # CDN
 
-| Url                                                                        | Description   |
-| -------------------------------------------------------------------------- | ------------- |
-| [/bundle.js](https://cdn.jsdelivr.net/gh/interaxai/cdn@latest/bundle.js)   | embed core    |
-| [/styles.css](https://cdn.jsdelivr.net/gh/interaxai/cdn@latest/styles.css) | embed styling |
+| Url                                                                             | Description   |
+| ------------------------------------------------------------------------------- | ------------- |
+| [/bundle.js](https://cdn.jsdelivr.net/gh/interaxai/cdn@latest/dist/bundle.js)   | embed core    |
+| [/styles.css](https://cdn.jsdelivr.net/gh/interaxai/cdn@latest/dist/styles.css) | embed styling |
 
 ## License
 
